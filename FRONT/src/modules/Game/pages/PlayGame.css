@@ -1,0 +1,56 @@
+.backdrop {
+	background: white;
+	opacity: 0.5;
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	z-index: 1;
+}
+
+.hidden {
+	display: none;
+}
+
+.notification {
+	position: absolute;
+	left: 50%;
+	transform: translate(-50%, 0);
+	padding: 10px;
+	text-align: center;
+	background: darkgoldenrod;
+	color: seashell;
+	z-index: 2;
+}
+
+.flex {
+	display: flex;
+	justify-content: space-around;
+}
+
+.grid-container {
+	width: fit-content;
+	display: grid;
+	grid-template-columns: repeat(10, 40px);
+	grid-template-rows: repeat(10, 40px);
+	border: 1px solid black;
+	margin-top: 10px;
+}
+
+.grid-item {
+	text-align: center;
+	border: 1px solid black;
+}
+
+.grid-item.clickable:hover {
+	cursor: pointer;
+	background-color: black !important;
+	opacity: 0.4;
+}
+
+.grid-item.disabled {
+	pointer-events: none;
+}
+
+.grid-item span{
+	vertical-align: -webkit-baseline-middle;
+}

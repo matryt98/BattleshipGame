@@ -1,10 +1,15 @@
 import { RouteProps } from "react-router-dom"
-import Game from "./page/Game"
+import Home from "./pages/Home"
+import PlayGame from "./pages/PlayGame"
 
 const routes: RouteProps[] = [
   {
     path: '/',
-    element: <Game/>
+    element: <Home/>
+  },
+  {
+    path: '/PlayGame/:gameId',
+    element: <PlayGame/>
   },
 ]
 
